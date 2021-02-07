@@ -1,0 +1,18 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: django-template-heroku
+  description: Django heroku websiter template
+  annotations:
+    github.com/project-slug: xb4dc0d3/django-template-heroku
+  tags:
+    - django
+    - python
+    - backend
+    - framework
+spec:
+  type: website
+  lifecycle: staging
+  owner: guest
+  system: backend-template
