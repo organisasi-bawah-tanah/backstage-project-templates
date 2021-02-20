@@ -54,7 +54,7 @@ spec:
         title: Jenkins path folder
         type: string
         default: ""
-        description: Jenkins path jobs, in folder_1/folder_2/master format
+        description: Jenkins path jobs, in folder_1/project_repo/master format
       kubernetes_component_label:
         title: Kubernetes component label
         type: string
