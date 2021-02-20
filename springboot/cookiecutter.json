@@ -1,5 +1,5 @@
 {   
-    "_copy_without_render": [".github/workflows/*"],
+    "_copy_without_render": [".github/workflows/*", "Jenkinsfile"],
     "component_id": "",
     "artifact_id": "{{ cookiecutter.component_id }}",
     "java_package_name": "{{ cookiecutter.component_id|replace('-', '') }}",

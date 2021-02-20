@@ -4,7 +4,12 @@ metadata:
   name: {{cookiecutter.component_id}}
   description: {{cookiecutter.description | jsonify}}
   annotations:
+    google.com/cloudbuild-project-slug: {{cookiecutter.gcp_project_name}}
     github.com/project-slug: {{cookiecutter.destination.git.owner + "/" + cookiecutter.destination.git.name}}
+    sonarqube.org/project-key: {{cookiecutter.sonarqube_project_key}}
+    lighthouse.com/website-url: {{cookiecutter.lighthouse_url}}
+    jenkins.io/github-folder: {{cookiecutter.jenkins_path_folder}}
+    backstage.io/kubernetes-id: {{cookiecutter.kubernetes_component_label}}
     backstage.io/techdocs-ref: url:{{cookiecutter.storePath}}
 spec:
   type: service

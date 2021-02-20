@@ -1,12 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Template
 metadata:
-  name: springboot-basic
-  title: Spring Boot Service
-  description: Create a simple microservice Spring Boot Java
+  name: springboot-project-template
+  title: Spring Boot Project Template
+  description: Create a simple microservice using Spring Boot Java
   tags:
     - springboot
     - java
+    - ci/cd
+    - sonarqube
+    - lighthouse
+    - kubernetes
 
 spec:
   owner: dev@example.com
@@ -31,3 +35,29 @@ spec:
         type: integer
         default: 8080
         description: The port to run the Spring Boot Service
+      sonarqube_project_key:
+        title: SonarQube project key
+        type: string
+        default: ""
+        description: The SonarQube project key on the Sonar instance
+      lighthouse_url:
+        title: Lighthouse url
+        type: string
+        default: ""
+        description: The url link to be audited by Lighthouse
+      gcp_project_name:
+        title: GCP project name
+        type: string
+        default: ""
+        description: The GCP project name to be used  
+      jenkins_path_folder:
+        title: Jenkins path folder
+        type: string
+        default: ""
+        description: Jenkins path jobs, in folder_1/folder_2/master format
+      kubernetes_component_label:
+        title: Kubernetes component label
+        type: string
+        default: ""
+        description: Kubenetes component label/metadata name
+      
