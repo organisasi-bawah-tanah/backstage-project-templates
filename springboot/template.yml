@@ -7,7 +7,7 @@ metadata:
   tags:
     - springboot
     - java
-    - ci/cd
+    - ci-cd
     - sonarqube
     - lighthouse
     - kubernetes
@@ -43,7 +43,7 @@ spec:
       lighthouse_url:
         title: Lighthouse url
         type: string
-        default: ""
+        default: "http://localhost:8080"
         description: The url link to be audited by Lighthouse
       gcp_project_name:
         title: GCP project name
