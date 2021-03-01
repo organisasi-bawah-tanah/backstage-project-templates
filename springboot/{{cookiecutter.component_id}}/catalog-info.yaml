@@ -15,3 +15,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: {{cookiecutter.owner}}
+  consumesApis:
+    - {{cookiecutter.consumes_apis}

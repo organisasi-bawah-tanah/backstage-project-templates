@@ -60,4 +60,9 @@ spec:
         type: string
         default: ""
         description: Kubenetes component label/metadata name
+      consumes_apis:
+        title: APIs consumed
+        type: string
+        default: "api-service"
+        description: APIs consumed by this service/project
       
