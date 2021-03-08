@@ -16,4 +16,4 @@ spec:
   lifecycle: experimental
   owner: {{cookiecutter.owner}}
   consumesApis:
-    - {{cookiecutter.consumes_apis}
+    - {{cookiecutter.consumes_apis}}
